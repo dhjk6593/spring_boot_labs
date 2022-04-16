@@ -8,3 +8,6 @@
 ```
 gradlew bootJar
 ```
+## Links
+
+[Change Configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html)

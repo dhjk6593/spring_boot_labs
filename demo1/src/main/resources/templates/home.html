@@ -5,9 +5,10 @@
     <title>My First Template</title>
 </head>
 <body>
-<h1>My First Template</h1>
-<img th:src="@{/images/stitch.png}">
-<h2>My Second No Template</h2>
-<img src="/images/stitch.png">
+    <h1>My First Template</h1>
+    <h3 th:text="${message}"></h3>
+    <img th:src="@{/images/stitch.png}">
+    <h2>My Second No Template</h2>
+    <img src="/images/stitch.png">
 </body>
 </html>
