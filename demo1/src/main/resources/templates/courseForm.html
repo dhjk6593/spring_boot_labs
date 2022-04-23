@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Form</title>
+</head>
+<body>
+<h1>Add course course form</h1>
+<form action="#" method="post" th:action="@{/course}" th:object="${courseForm}">
+    <table>
+        <tr>
+            <td>Course Id:</td>
+            <td><input type="text" th:field="*{courseId}"></td>
+            <td th:if="${#fields.hasErrors('courseId')}" th:errors="*{courseId}">Course Id Error</td>
+        </tr>
+        <tr>
+            <td>Course Name:</td>
+            <td><input type="text" th:field="*{courseName}"></td>
+            <td th:if="${#fields.hasErrors('courseName')}" th:errors="*{courseName}">Course Name Error</td>
+        </tr>
+        <tr>
+            <td>Duration:</td>
+            <td><input type="number" th:field="*{duration}"></td>
+            <td th:if="${#fields.hasErrors('duration')}" th:errors="*{duration}">Duration Error</td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
