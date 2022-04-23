@@ -11,3 +11,4 @@ gradlew bootJar
 ## Links
 
 [Change Configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html)
+[External Config](https://docs.spring.io/spring-boot/docs/2.1.8.RELEASE/reference/html/boot-features-external-config.html)
