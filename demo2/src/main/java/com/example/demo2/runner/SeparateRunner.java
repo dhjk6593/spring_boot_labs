@@ -14,11 +14,16 @@ public class SeparateRunner implements CommandLineRunner {
 
     @Autowired
     private ApplicationContext context;
+
     @Override
     public void run(String... args) throws Exception {
         LOGGER.info("execute somethings");
         LOGGER.info("execute more things");
-        Calculator cal1 = context.getBean(Calculator.class);
+        Calculator cal1 = context.getBean("add", Calculator.class);
         LOGGER.info("1. result={}",cal1.calc(3,4));
+        Calculator cal2 = context.getBean("sub",Calculator.class);
+        LOGGER.info("2. result={}",cal2.calc(3,4));
+        Calculator cal3 = context.getBean("mul",Calculator.class);
+        LOGGER.info("3. result={}",cal3.calc(3,4));
     }
 }
