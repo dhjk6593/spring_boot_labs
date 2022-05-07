@@ -1,29 +1,21 @@
 package com.example.demo2.bean;
 
+
+import lombok.*;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("prototype")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Message {
 
+    @Value("-1")
     private int id;
 
+    @Value("Simon")
     private String name;
-
-    public Message(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
