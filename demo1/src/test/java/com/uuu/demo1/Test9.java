@@ -1,6 +1,5 @@
 package com.uuu.demo1;
 
-import com.uuu.demo1.beans.User2;
 import com.uuu.demo1.beans.User3;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeAll;

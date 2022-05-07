@@ -1,12 +1,9 @@
 package com.uuu.demo1;
 
-import com.uuu.demo1.beans.User1;
 import com.uuu.demo1.beans.User2;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
