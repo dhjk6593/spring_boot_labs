@@ -7,7 +7,8 @@ import com.example.demo2.bean.SubCalculator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//disable AppConfig
+//@Configuration
 public class AppConfig {
 
     @Bean(name = "add")
