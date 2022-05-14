@@ -15,6 +15,7 @@ public class Demo3Application {
 
 	@GetMapping("/")
 	public String root(){
-		return "Hello Spring Boot";
+		return "Hello Spring Boot\n2020-May-14";
 	}
+
 }
