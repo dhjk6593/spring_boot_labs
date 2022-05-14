@@ -22,6 +22,6 @@ public class MyRunner4 implements CommandLineRunner {
         SqlParameterSource source = new MapSqlParameterSource().addValue("id", 1);
         User user = template.queryForObject(SQL1, source, (rs, rowNum) -> new User(rs.getString("username"),
                 rs.getString("email")));
-        log.info("user name={}/email=email={}", user.getUsername(), user.getEmail());
+        log.info("user name={}, email={}", user.getUsername(), user.getEmail());
     }
 }
