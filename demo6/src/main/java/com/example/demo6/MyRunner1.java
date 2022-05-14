@@ -17,6 +17,7 @@ public class MyRunner1 implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         initSampleData();
+        findAll();
     }
 
     private void initSampleData() {
@@ -30,6 +31,12 @@ public class MyRunner1 implements CommandLineRunner {
         repository.save(new Customer("Andy", "Lee"));
         repository.save(new Customer("Jackson", "Hsiao"));
         repository.findAll().forEach(this::printCustomer);
+    }
+
+    private void findAll() {
+        log.info("##### findAll #####");
+        repository.findAllOrderByName()
+                  .forEach(this::printCustomer);
     }
 
     private void printCustomer(Customer c) {
